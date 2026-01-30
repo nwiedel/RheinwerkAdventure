@@ -5,6 +5,60 @@ von Tom Wendel in Java nachzustellen.
 Das Videotraining ist vom Rheinwerkverlag aus dem Jahr 2016.
 Alle Ressourcen werden noch getrennt bei Erscheinen aufgeführt.
 
+Referenzen:
+===========
+
+Tilesets
+========
+Hyptosis (http://hyptosis.newgrounds.com/)
+Lost Garden (http://www.lostgarden.com/2006/07/more-free-game-graphics.html)
+Zabin (http://opengameart.org/users/zabin)
+
+Maps
+====
+Die Maps wurden im Rahmen des Videotrainings des Rehinwerkverlags zu diesem
+Videotutorial erstellt und werden von mir als solche weiter genutzt.
+
+Sprites
+=======
+http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator/
+Client Bellanger (http://opengameart.org/content/animated-coins)
+
+UI
+==
+http://kenney.nl/assets/ui-pack-rpg-expansion
+
+Sounds
+======
+Sword: Mike Koenig (http://soundbible.com/1176-Sword-Swing.html)
+Click: Mike Koenig (http://soundbible.com/1258-Tick-Tock.html)
+Hit: Mark DiAngelo (http://soundbible.com/2069-Realistic-Punch.html)
+Coin: Luke.RUSTLTD (http://opengameart.org/content/10-8bit-coin-sounds)
+
+Musik
+=====
+woodloop: http://www.playonloop.com/2013-music-loops/deep-emerald/
+houseloop: http://www.playonloop.com/2014-music-loops/go-doge-go/
+townloop: http://www.playonloop.com/2015-music-loops/cookie-island/
+menuloop: http://www.playonloop.com/2010-music-loops/elevators/
+
+
+Sonstige Quellen und Anlaufpunkte:
+==================================
+- http://opengameart.org/
+- http://kenney.nl/
+- http://www.playonloop.com/
+- http://audiojungle.net/
+- Assets Stores f r RPG-Maker, Unity,...
+
+Fonts
+=====
+"Asset-Pack 1" von http://kenney.nl/
+
+
+
+LibGDX Preferences:
+===================
 
 
 A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
