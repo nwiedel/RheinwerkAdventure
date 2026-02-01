@@ -1,4 +1,4 @@
-package de.nicolas.utils.actors;
+package utils.actors;
 
 import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.Vector2;

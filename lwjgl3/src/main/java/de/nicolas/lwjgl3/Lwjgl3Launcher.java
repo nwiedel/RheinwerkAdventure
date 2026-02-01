@@ -3,7 +3,7 @@ package de.nicolas.lwjgl3;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 import de.nicolas.RheinwerkGame;
-import de.nicolas.utils.Utils;
+import utils.Utils;
 
 /** Launches the desktop (LWJGL3) application. */
 public class Lwjgl3Launcher {

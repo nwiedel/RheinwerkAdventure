@@ -1,10 +1,10 @@
-package de.nicolas.utils.actors;
+package utils.actors;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.utils.Align;
-import de.nicolas.utils.game.BaseGame;
+import utils.game.BaseGame;
 
 public class DialogBox extends BaseActor {
 

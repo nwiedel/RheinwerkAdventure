@@ -1,4 +1,4 @@
-package de.nicolas.utils.game;
+package utils.game;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -13,7 +13,7 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFont
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.NinePatchDrawable;
-import de.nicolas.utils.screens.BaseScreen;
+import utils.screens.BaseScreen;
 
 /**
  * wird erstellt beim Start des Programms.

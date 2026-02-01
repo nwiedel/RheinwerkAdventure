@@ -1,7 +1,7 @@
-package de.nicolas.utils.actions;
+package utils.actions;
 
 import com.badlogic.gdx.scenes.scene2d.Actor;
-import de.nicolas.utils.game.SceneSegment;
+import utils.game.SceneSegment;
 
 import java.util.ArrayList;
 

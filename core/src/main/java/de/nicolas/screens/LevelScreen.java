@@ -1,6 +1,6 @@
 package de.nicolas.screens;
 
-import de.nicolas.utils.screens.BaseScreen;
+import utils.screens.BaseScreen;
 
 public class LevelScreen extends BaseScreen {
     @Override

@@ -1,7 +1,7 @@
 package de.nicolas.model;
 
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import de.nicolas.utils.actors.BaseActor;
+import utils.actors.BaseActor;
 
 public class Item extends BaseActor {
 

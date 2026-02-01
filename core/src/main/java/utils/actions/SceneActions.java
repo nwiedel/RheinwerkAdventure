@@ -1,9 +1,9 @@
-package de.nicolas.utils.actions;
+package utils.actions;
 
 import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.utils.Align;
-import de.nicolas.utils.actors.BaseActor;
+import utils.actors.BaseActor;
 
 public class SceneActions extends Actions {
 

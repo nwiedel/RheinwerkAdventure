@@ -1,4 +1,4 @@
-package de.nicolas.utils.game;
+package utils.game;
 
 import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.Actor;

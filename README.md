@@ -17,7 +17,8 @@ Zabin (http://opengameart.org/users/zabin)
 Maps
 ====
 Die Maps wurden im Rahmen des Videotrainings des Rehinwerkverlags zu diesem
-Videotutorial erstellt und werden von mir als solche weiter genutzt.
+Videotutorial erstellt und werden von mir als solche weiter genutzt. Leichte Änderungen musste ich vornehmen,
+um sie für Java und meine Struktur zu nutzen.
 
 Sprites
 =======

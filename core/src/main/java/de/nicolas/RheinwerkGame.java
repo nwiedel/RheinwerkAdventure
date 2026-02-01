@@ -1,7 +1,7 @@
 package de.nicolas;
 
 import de.nicolas.screens.LevelScreen;
-import de.nicolas.utils.game.BaseGame;
+import utils.game.BaseGame;
 
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
 public class RheinwerkGame extends BaseGame {

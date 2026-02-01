@@ -1,7 +1,7 @@
-package de.nicolas.utils.actions;
+package utils.actions;
 
 import com.badlogic.gdx.scenes.scene2d.Action;
-import de.nicolas.utils.actors.DialogBox;
+import utils.actors.DialogBox;
 
 public class SetTextAction extends Action {
 
