@@ -12,6 +12,7 @@ import com.badlogic.gdx.maps.tiled.TiledMapTile;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.objects.TiledMapTileMapObject;
 import com.badlogic.gdx.maps.tiled.renderers.OrthoCachedTiledMapRenderer;
+import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import utils.Utils;
@@ -28,9 +29,15 @@ public class TileMapActor extends Actor {
     private OrthographicCamera tiledCamera;
     private OrthoCachedTiledMapRenderer tiledMapRenderer;
 
+    private int[] layerBackground = {0, 1, 2, 3};
+    private int[] layerItems = {4};
+    private int[] layerForeground = {5, 6};
+
+
     public TileMapActor(String filename, Stage theStage){
 
         tiledMap = new TmxMapLoader().load(filename);
+        System.out.println(tiledMap.getLayers().size());
 
         int tileWidth = (int)tiledMap.getProperties().get("tilewidth");
         int tileHeight = (int)tiledMap.getProperties().get("tileheight");
@@ -65,8 +72,11 @@ public class TileMapActor extends Actor {
 
         // batch beenden damit der tiledMapRenderer nicht als letztes ausgeführt wird
         batch.end();
-        tiledMapRenderer.render();
-        batch.begin();
+        tiledMapRenderer.render(layerBackground);
+        //tiledMapRenderer.render(layerItems);
+        //tiledMapRenderer.render(layerForeground);
+       batch.begin();
+
     }
 
     public ArrayList<MapObject> getRectangleList(String propertyName){

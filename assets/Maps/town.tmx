@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" backgroundcolor="#555500" nextlayerid="9" nextobjectid="75">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" backgroundcolor="#555500" nextlayerid="10" nextobjectid="75">
  <properties>
   <property name="Song" value="town"/>
  </properties>

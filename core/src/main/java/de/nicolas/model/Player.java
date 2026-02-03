@@ -18,6 +18,7 @@ public class Player extends BaseActor {
         setAcceleration(400);
         setMaxSpeed(100);
         setDeceleration(400);
+
     }
 
     @Override
