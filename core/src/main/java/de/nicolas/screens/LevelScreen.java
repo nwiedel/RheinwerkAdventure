@@ -8,8 +8,11 @@ import com.badlogic.gdx.utils.ScreenUtils;
 import de.nicolas.RheinwerkGame;
 import de.nicolas.model.Area;
 import de.nicolas.model.Player;
+import de.nicolas.model.Solid;
 import de.nicolas.model.World;
+import sun.java2d.pipe.SolidTextRenderer;
 import utils.Utils;
+import utils.actors.BaseActor;
 import utils.actors.TileMapActor;
 import utils.screens.BaseScreen;
 
@@ -36,6 +39,13 @@ public class LevelScreen extends BaseScreen {
         world.addAreas(wood);
 
         tma = new TileMapActor(town.getMapLocation(), mainStage);
+
+        // Kollisionsboxen
+        for (MapObject obj : tma.getRectangleList("Solid")){
+            MapProperties props = obj.getProperties();
+            new Solid((float)props.get("x"), (float)props.get("y"),
+                (float)props.get("width"), (float)props.get("height"), mainStage);
+        }
 
         // Player
         MapObject startPoint = tma.getRectangleList("Player").get(0);
@@ -72,6 +82,11 @@ public class LevelScreen extends BaseScreen {
         }
         if (Gdx.input.isKeyPressed(Input.Keys.DOWN)){
             player.accelerateAtAngle(270);
+        }
+
+        // Kollision Player mit Kollisionsboxen
+        for (BaseActor solid : BaseActor.getList(mainStage, "de.nicolas.model.Solid")){
+            player.preventOverlap(solid);
         }
     }
 }

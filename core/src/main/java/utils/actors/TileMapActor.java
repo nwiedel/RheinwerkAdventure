@@ -24,19 +24,19 @@ public class TileMapActor extends Actor {
 
     public static int windowWidth = Utils.WINDOW_WIDTH;
     public static int windowHeight = Utils.WINDOW_HEIGHT;
+    public static final float WORLD_WIDTH = Utils.WORLD_WIDTH;
+    public static final float WORLD_HEIGHT = Utils.WORLD_HEIGHT;
 
     private TiledMap tiledMap;
     private OrthographicCamera tiledCamera;
     private OrthoCachedTiledMapRenderer tiledMapRenderer;
 
     private int[] layerBackground = {0, 1, 2, 3};
-    private int[] layerItems = {4};
     private int[] layerForeground = {5, 6};
 
     public TileMapActor(String filename, Stage theStage){
 
         tiledMap = new TmxMapLoader().load(filename);
-        System.out.println(tiledMap.getLayers().size());
 
         int tileWidth = (int)tiledMap.getProperties().get("tilewidth");
         int tileHeight = (int)tiledMap.getProperties().get("tileheight");
@@ -72,9 +72,7 @@ public class TileMapActor extends Actor {
         // batch beenden damit der tiledMapRenderer nicht als letztes ausgeführt wird
         batch.end();
         tiledMapRenderer.render(layerBackground);
-        //tiledMapRenderer.render(layerItems);
-        //tiledMapRenderer.render(layerForeground);
-       batch.begin();
+        batch.begin();
 
     }
 

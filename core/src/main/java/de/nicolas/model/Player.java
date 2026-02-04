@@ -16,7 +16,7 @@ public class Player extends BaseActor {
 
         setBoundaryPolygon(8);
         setAcceleration(400);
-        setMaxSpeed(100);
+        setMaxSpeed(150);
         setDeceleration(400);
 
     }
@@ -25,7 +25,8 @@ public class Player extends BaseActor {
     public void act(float delta) {
         super.act(delta);
 
-        boundToWorld();
+        alignCamera();
+        // boundToWorld();
         applyPhysics(delta);
     }
 }
