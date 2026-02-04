@@ -33,7 +33,6 @@ public class TileMapActor extends Actor {
     private int[] layerItems = {4};
     private int[] layerForeground = {5, 6};
 
-
     public TileMapActor(String filename, Stage theStage){
 
         tiledMap = new TmxMapLoader().load(filename);
@@ -131,5 +130,17 @@ public class TileMapActor extends Actor {
             }
         }
         return list;
+    }
+
+    public int[] getLayerBackground() {
+        return layerBackground;
+    }
+
+    public int[] getLayerForeground() {
+        return layerForeground;
+    }
+
+    public OrthoCachedTiledMapRenderer getTiledMapRenderer() {
+        return tiledMapRenderer;
     }
 }

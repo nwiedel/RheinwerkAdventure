@@ -4,10 +4,12 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.maps.MapProperties;
+import com.badlogic.gdx.utils.ScreenUtils;
 import de.nicolas.RheinwerkGame;
 import de.nicolas.model.Area;
 import de.nicolas.model.Player;
 import de.nicolas.model.World;
+import utils.Utils;
 import utils.actors.TileMapActor;
 import utils.screens.BaseScreen;
 
@@ -39,6 +41,20 @@ public class LevelScreen extends BaseScreen {
         MapObject startPoint = tma.getRectangleList("Player").get(0);
         MapProperties props = startPoint.getProperties();
         player = new Player((float)props.get("x"), (float) props.get("y"), mainStage);
+    }
+
+    @Override
+    public void render(float delta) {
+        mainStage.act(delta);
+        uiStage.act(delta);
+
+        update(delta);
+
+        ScreenUtils.clear(Utils.CORNFLOWER_BLUE);
+
+        mainStage.draw();
+        tma.getTiledMapRenderer().render(tma.getLayerForeground());
+        uiStage.draw();
     }
 
     @Override

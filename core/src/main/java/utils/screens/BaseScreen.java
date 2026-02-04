@@ -10,6 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.ScreenUtils;
 import utils.Utils;
+import utils.actors.TileMapActor;
 
 public abstract class BaseScreen implements Screen, InputProcessor {
 
